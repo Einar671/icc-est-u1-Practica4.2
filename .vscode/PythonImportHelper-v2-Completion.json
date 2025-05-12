@@ -1,53 +1,5 @@
 [
     {
-        "label": "App",
-        "importPath": "app",
-        "description": "app",
-        "isExtraImport": true,
-        "detail": "app",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Tuple",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Callable",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "Benchmarking",
         "importPath": "benchmarking",
         "description": "benchmarking",
@@ -61,6 +13,24 @@
         "description": "sort_methods",
         "isExtraImport": true,
         "detail": "sort_methods",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -82,11 +52,27 @@
         "documentation": {}
     },
     {
-        "label": "App",
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "GraficoPersonalizado",
         "kind": 6,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "class App:\n    def __init__(self):\n        self.tamanos: List[int] = [5000, 10000, 30000,50000,100000]\n        self.max_tamano: int = max(self.tamanos)\n        self.arreglo_base: List[int] = self.build_arreglo(self.max_tamano)\n        self.benchmark = Benchmarking()\n        self.sorter = SortMethods()  \n        self.algoritmos: Dict[str, callable] = {\n            \"bubble\": self.sorter.sort_bubble,\n            \"bubbleMejorado\": self.sorter.sort_bubble_optimized,",
+        "peekOfCode": "class GraficoPersonalizado:\n    def __init__(self):\n        self.tamanos = [5000, 10000, 30000, 50000, 100000]\n        self.benchmark = Benchmarking()\n        self.sorter = SortMethods()\n        self.metodos_dict = {\n            \"burbuja\": self.sorter.sort_bubble,\n            \"bubbleMejorado\": self.sorter.sort_bubble_optimized,\n            \"seleccion\": self.sorter.sort_selection,\n            \"insercion\": self.sorter.sort_insertion,",
         "detail": "app",
         "documentation": {}
     },
